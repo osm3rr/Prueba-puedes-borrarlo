@@ -14,7 +14,7 @@ clock=pygame.time.Clock()
 
 #Set game values
 Player_lives=1
-Player_velocity=5
+Player_velocity=10
 Coin_velocity=5
 Coin_aceleration = 0.5
 screen_distance = 100 #distancia antes de entrar a la pantalla
@@ -73,6 +73,11 @@ coin_image=pygame.image.load("coin.png")
 coin_rect=coin_image.get_rect()
 coin_rect.x=coin_place
 coin_rect.y=random.randint(64, height-32)#entender las posiciones*****
+
+#Set background
+castle_image=pygame.image.load("castle.png")
+castle_image = pygame.transform.scale(castle_image, (width, height))
+
 
 
 pygame.mixer.music.play(-1,0)#-1 es para que siempre se reproduzca
@@ -146,7 +151,7 @@ while running:
             running = False
 
     
-    display_surface.fill(Black)
+    display_surface.blit(castle_image,(0,0))
 
     #ASSETS
     display_surface.blit(dragon_image,dragon_rect)
