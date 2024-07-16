@@ -1,6 +1,7 @@
 import pygame,random
 
 pygame.init()
+hola
 
 width=800
 height=600
@@ -16,7 +17,7 @@ clock=pygame.time.Clock()
 Player_lives=1
 Player_velocity=10
 Coin_velocity=5
-Coin_aceleration = 0.5
+Coin_aceleration = 20
 screen_distance = 100 #distancia antes de entrar a la pantalla
 
 coin_place= width+screen_distance
