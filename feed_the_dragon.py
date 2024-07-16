@@ -1,9 +1,9 @@
 import pygame,random
 
 pygame.init()
-hola
 
-width=800
+
+width=600
 height=600
 
 display_surface=pygame.display.set_mode((width,height))
